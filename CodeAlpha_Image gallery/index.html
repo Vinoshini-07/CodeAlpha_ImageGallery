@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <abbr><p>Click below categories</p>
+    <nav class="controls-row">
+      <!-- Buttons instead of anchor tags -->
+      <button type="button" onclick="showGallery('all')" class="pill">All</button>
+      <button type="button" onclick="showGallery('travel')" class="pill">Travel</button>
+      <button type="button" onclick="showGallery('aesthetic')" class="pill">Aesthetic</button>
+      <button type="button" onclick="showGallery('pets')" class="pill">pets</button>
+      <button type="button" onclick="showGallery('flowers')" class="pill">flowers</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="gallery" id="gallery">
+      <!-- Travel -->
+      <img src="https://wwwnc.cdc.gov/travel/images/traveler-city.jpg" data-category="travel" alt="Travel 1" onclick="openViewer(this)">
+      <img src="https://rayantravels.net/img/bg/1.jpg" data-category="travel" alt="Travel 2" onclick="openViewer(this)">
+      <img src="https://www.livecareer.com/lcapp/uploads/2020/09/are-you-willing-to-travel.jpg"data-category="travel" alt="Travel 3" onclick="openViewer(this)">
+      <img src="https://wallpapersok.com/images/hd/a-bright-and-wondrous-mountain-path-in-the-wilderness-ffoze7lrc43u5vsl.jpg" data-category="travel" alt="Travel 4" onclick="openViewer(this)">
+      <img src= "https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2019/09/INDIA-TRAVEL-GUIDE-1.jpg?ssl=1"data-category="travel" alt="Travel 5" onclick="openViewer(this)">
+
+      <!-- Aesthetic -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQupw6kY79AhMe03h3oZzuPapJTlIw06hbAow&s" data-category="aesthetic" alt="Aesthetic 1" onclick="openViewer(this)">
+      <img src="https://r1.ilikewallpaper.net/iphone-12-pro-max-wallpapers/download-109578/55-HD-Simple-Aesthetic-on-afari.jpg" data-category="aesthetic" alt="Aesthetic 2" onclick="openViewer(this)">
+      <img src="https://www.pixelstalk.net/wp-content/uploads/images5/Aesthetic-Black-iPhone-Wallpaper-Free-Download.jpg"  data-category="aesthetic" alt="Aesthetic 3" onclick="openViewer(this)">
+      <img src="https://marketplace.canva.com/EAFmhdAGpWA/1/0/1600w/canva-black-and-pink-gradient-motivational-quote-desktop-wallpaper-PrgxdKbp8Jk.jpg" data-category="aesthetic" alt="Aesthetic 4" onclick="openViewer(this)">
+      <img src="https://img.freepik.com/free-vector/gray-daisy-template-vector-social-media-story-quote-everyday-is-fresh-start_53876-126120.jpg?semt=ais_hybrid&w=740&q=80"data-category="aesthetic" alt="Aesthetic 5" onclick="openViewer(this)">
+
+      <!-- pets-->
+      <img src= "https://d3i6fh83elv35t.cloudfront.net/static/2023/03/IMG_0213-1024x727.jpeg" data-category="pets" alt="pets 1" onclick="openViewer(this)">
+      <img src="https://www.philippineairlines.com/content/dam/palportal/migration/images/new-pal-mm-web-images/pets/pets%20child%20hero%20mobile%20350x350.png" data-category="pets" alt="pets 2" onclick="openViewer(this)">
+      <img src="https://media.wired.com/photos/5ed06ca9fbf7b2147038a8a9/master/pass/Gear-New-Pet-1168772154.jpg"data-category="pets" alt="pets 3" onclick="openViewer(this)">
+      <img src="https://www.thepetcarpenter.co.uk/wp-content/uploads/2024/07/rabbit-wrapped-in-blanket-next-to-window-1024x683.jpg" data-category="pets" alt="pets 4" onclick="openViewer(this)">
+      <img src="https://i.ytimg.com/vi/9V8r00IDlWU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDl1oFAEz-koGJcxRYxkbkWLfuzyA"data-category="pets" alt="pets 5" onclick="openViewer(this)">
+
+      <!-- flowers-->
+      <img src="https://i.pinimg.com/236x/45/b9/e6/45b9e6ba2973f3e714c5f46bda44ec3d.jpg"data-category="flowers" alt="flowers 1" onclick="openViewer(this)">
+      <img src="https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg"data-category="flowers" alt="flowers 2" onclick="openViewer(this)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaGbcKCQ_FOdrFDAbIrr3Li-W_7pLdlUD1bg&s"data-category="flowers" alt="flowers 3" onclick="openViewer(this)">
+      <img src="https://www.jotform.com/blog/wp-content/uploads/2022/02/yousef-espanioly-w11m2Fy_FXY-unsplash-700x466.jpg"data-category="flowers" alt="flowers 4" onclick="openViewer(this)">
+      <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfGdbrZMSss_-2YR5lED1XkgPs6TlaVJ8hUg&s"data-category="flowers" alt="flowers 5" onclick="openViewer(this)">
+
+      <!--Extra-->
+      <img src="https://i.pinimg.com/736x/3f/d9/db/3fd9db34382c696a8db1b4fb13f4726c.jpg" data-category="aesthetic" alt="Extra 1" onclick="openViewer(this)">
+      <img src="https://cdn.clippingpath.in/wp-content/uploads/2018/11/adult-blur-camera-368893.jpg" data-category="travel" alt="Extra 2" onclick="openViewer(this)">
+      <img src="https://img.etimg.com/thumb/122294235/122294235.jpg?height=746&width=420&resizemode=76&imgsize=2904108" data-category="pets" alt="Extra 3" onclick="openViewer(this)">
+    </div>
+  </main>
+  <div id="viewer" class="viewer" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="viewer-close" onclick="closeViewer()" aria-label="Close (Esc)">✕</button>
+    <button class="viewer-prev" onclick="prevImage()" aria-label="Previous (left arrow)">‹</button>
+    <img id="viewerImg" src="" alt="Enlarged image">
+    <button class="viewer-next" onclick="nextImage()" aria-label="Next (right arrow)">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
